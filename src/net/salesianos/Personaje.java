@@ -36,4 +36,38 @@ public class Personaje {
         this.energia = energia;
     }
 
+    public void entrenar(int x) {
+        if (x == 0) {
+            System.out.println("No puedes entrenar 0 niveles");
+            return;
+        }
+        nivel = nivel + x;
+    }
+
+    public void descansar(int x) {
+        if (x == 0) {
+            System.out.println("No puedes descansar 0 puntos");
+            return;
+        }
+        if (energia + x > 100) {
+            energia = 100;
+        } else {
+            energia = energia + x;
+        }
+    }
+
+    public void gastarEnergia(int x) {
+        if (energia - x < 0) {
+            energia = 0;
+        } else {
+            energia = energia - x;
+        }
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Nivel: " + nivel);
+        System.out.println("Energia: " + energia);
+    }
+
 }
