@@ -48,5 +48,13 @@ public class App {
         // o. Mostrar total de personajes
         Personaje.mostrarTotalPersonajes();
 
+        // p. Introducir los 3 personajes en un array llamado reino
+        Personaje[] reino = { viajero, thorak, lyra };
+
+        // q. Recorrer el array mostrando la informacion de cada personaje
+        for (int i = 0; i < reino.length; i++) {
+            reino[i].mostrarInfo();
+        }
+
     }
 }
