@@ -17,4 +17,10 @@ public class Guerrero extends Personaje {
         this.arma = arma;
     }
 
+    @Override
+    public void mostrarInfo() {
+        super.mostrarInfo();
+        System.out.println("Arma: " + arma);
+    }
+
 }
