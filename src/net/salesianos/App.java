@@ -33,5 +33,20 @@ public class App {
         // j. Mostrar total de personajes
         Personaje.mostrarTotalPersonajes();
 
+        // k. Crear mago Lyra
+        Mago lyra = new Mago("Lyra", 4, "Hielo");
+
+        // l. Ataque elemental
+        lyra.ataqueElemental();
+
+        // m. Entrenar 2 niveles
+        lyra.entrenar(2);
+
+        // n. Mostrar informacion del mago
+        lyra.mostrarInfo();
+
+        // o. Mostrar total de personajes
+        Personaje.mostrarTotalPersonajes();
+
     }
 }
