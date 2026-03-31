@@ -23,4 +23,8 @@ public class Mago extends Personaje {
         System.out.println("Elemento: " + elemento);
     }
 
+    public void ataqueElemental() {
+        gastarEnergia(25);
+    }
+
 }
