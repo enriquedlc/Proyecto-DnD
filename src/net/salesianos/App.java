@@ -18,5 +18,20 @@ public class App {
         // e. Mostrar total de personajes
         Personaje.mostrarTotalPersonajes();
 
+        // f. Crear guerrero Thorak
+        Guerrero thorak = new Guerrero("Thorak", 5, "Hacha doble");
+
+        // g. Ataque pesado
+        thorak.ataquePesado();
+
+        // h. Descansar 10 puntos
+        thorak.descansar(10);
+
+        // i. Mostrar informacion del guerrero
+        thorak.mostrarInfo();
+
+        // j. Mostrar total de personajes
+        Personaje.mostrarTotalPersonajes();
+
     }
 }
