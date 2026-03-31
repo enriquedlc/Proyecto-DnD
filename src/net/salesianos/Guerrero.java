@@ -23,4 +23,8 @@ public class Guerrero extends Personaje {
         System.out.println("Arma: " + arma);
     }
 
+    public void ataquePesado() {
+        gastarEnergia(15);
+    }
+
 }
